@@ -1,0 +1,162 @@
+
+.header-link,
+.header-link:hover,
+.menu-item:hover {
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Aligns items to the ends */
+    align-items: center; /* Centers items vertically */
+    padding: 20px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-right: 40px; /* Add right margin to push it to the right */
+}
+
+.menu-B {
+    display: flex;
+    column-gap: 30px; /* Adjust spacing between menu items */
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #000; 
+    font-family: "Jacques Francois", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    cursor: pointer; /* Add a cursor pointer on hover */
+}
+
+.body {
+    margin-bottom: auto;
+    padding-bottom: 0;
+}
+
+.text {
+    color: #000;
+    font-family: "Jim Nightshade", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+#text2 {
+    color: #ffffff;
+    font-family: "Jim Nightshade", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+.hidden-list {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1; /* Ensure the content is above the background */
+        color: #ffffff;
+    }
+
+#music-list {
+    /* Your existing CSS properties */
+    display: none;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 20px; /* Add padding for spacing */
+}
+
+#design-list {
+    /* Your existing CSS properties */
+    display: none;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 20px; /* Add padding for spacing */
+}
+
+#photo-list {
+    /* Your existing CSS properties */
+    display: none;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 20px; /* Add padding for spacing */
+}
+
+#contact-list {
+    /* Your existing CSS properties */
+    display: none;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-height: 600px; /* Adjust the height as needed */
+    width: 100%;
+    overflow-y: auto;
+}
+
+.photo-gallery img {
+    width: calc(33.33% - 10px); /* Adjust the width of each photo */
+    height: auto;
+}
+
+/* make every photo it's true size */
+.photo-gallery img {
+    object-fit: contain;
+}
+
+
+.footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+}
+
+/* make all hyperlinks black and only underline on hover */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.homepage-image {
+    position: relative; /* Add this line to make positioning relative */
+    width: 100%; /* Make the image width 100% of its container */
+    max-width: 100%; /* Set a maximum width to prevent image stretching */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make the image a block element to occupy full width */
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+}
+
+
+
+.blur-background {
+    filter: blur(5px); /* Adjust the blur intensity as needed */
+    transition: filter 0.1s ease; /* Add smooth transition */
+}
+
+.blur-background:hover {
+    filter: blur(0); /* Remove the blur on hover */
+}
+
